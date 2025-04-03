@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tutorials - Recipe Women</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cooking Video Tutorials</h1>
+    </header>
+    <main>
+        <section id="video-list">
+            <h2>Available Tutorials</h2>
+            <!-- Video tutorials will be listed here -->
+        </section>
+        <section id="upload-video">
+            <h2>Upload Your Video</h2>
+            <form action="/upload-video" method="POST" enctype="multipart/form-data">
+                <label for="video-title">Video Title:</label>
+                <input type="text" id="video-title" name="video-title" required>
+                <label for="video-file">Upload Video:</label>
+                <input type="file" id="video-file" name="video-file" accept="video/*" required>
+                <button type="submit">Upload Video</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Recipe Women. All rights reserved.</p>
+    </footer>
+</body>
+</html>

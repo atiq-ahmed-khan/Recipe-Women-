@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe - Recipe Women</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Title</h1>
+    </header>
+    <main>
+        <section id="recipe-details">
+            <h2>Ingredients</h2>
+            <ul>
+                <!-- Ingredients will be listed here -->
+            </ul>
+            <h2>Instructions</h2>
+            <p><!-- Instructions will be displayed here --></p>
+            <h2>Cooking Time</h2>
+            <p><!-- Cooking time will be displayed here --></p>
+            <h2>Uploaded by</h2>
+            <p><!-- Chef's name will be displayed here --></p>
+        </section>
+        <section id="comments">
+            <h2>Comments</h2>
+            <form action="/comment" method="POST">
+                <textarea name="comment" required></textarea>
+                <button type="submit">Submit Comment</button>
+            </form>
+            <div id="comment-list">
+                <!-- Comments will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Recipe Women. All rights reserved.</p>
+    </footer>
+</body>
+</html>

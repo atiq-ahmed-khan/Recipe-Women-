@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Challenges - Recipe Women</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weekly Cooking Challenges</h1>
+    </header>
+    <main>
+        <section id="challenges-list">
+            <h2>Current Challenges</h2>
+            <!-- Challenges will be listed here -->
+        </section>
+        <section id="submit-challenge">
+            <h2>Submit Your Challenge</h2>
+            <form action="/submit-challenge" method="POST">
+                <label for="challenge-title">Challenge Title:</label>
+                <input type="text" id="challenge-title" name="challenge-title" required>
+                <label for="challenge-description">Description:</label>
+                <textarea id="challenge-description" name="challenge-description" required></textarea>
+                <button type="submit">Submit Challenge</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Recipe Women. All rights reserved.</p>
+    </footer>
+</body>
+</html>
